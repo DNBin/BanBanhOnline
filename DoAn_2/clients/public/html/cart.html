@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bin Cake - Cửa hàng bánh ngọt</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="/clients/public/lib/animate/animate.css" rel="stylesheet">
+        <link href="/clients/public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="/clients/public/lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="/clients/public/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="/clients/public/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="/clients/public/images/logo/LogoBin-1-removebg-preview.png" alt="" width="110px" height="150px"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link ">Trang chủ</a>
+                        <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="booking.html" class="nav-item nav-link">Đặt hàng</a>
+                        <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                        <a href="" class="nav-item nav-link " style="font-size: 12px; margin-top: 5px;">Đăng nhập</a>
+                        <a href="" class="nav-item nav-link" style="font-size: 12px; margin-top: 5px;">Đăng ký</a>
+                        <a href="" class="nav-item nav-link active" > <i class="fas fa-cart-plus"></i></a>
+                        <a class="nav-item nav-link " onclick="document.getElementById('id01').style.display='block'" style="width:auto; cursor: pointer;;"> <i class="fab fa-sistrix"></i></a>
+                        <div id="id01" class="modal">
+                            <div class="input-group " style="width: 30%; margin:1% auto auto 64%; background-color: rgb(255, 255, 255); border-radius: 5px;">
+                                <input type="search" placeholder="Nhập từ bạn cần tìm?" aria-describedby="button-addon3" class="form-control bg-none border-0" style=" border-radius: 30px; font-size: 14px;">
+                                <div class="input-group-append border-0">
+                                    <a id="button-addon3" type="button" class="btn btn-link text-success "><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+        
+        <!-- Page Header Start -->
+        <div class="page-header mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Giỏ Hàng</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Cart Start -->
+        <div class="team">
+            <div class="container" >
+                <form action="" method="POST">
+                    <div class="table-responsive" >
+                        <table class="table table-borderless">
+                            <thead class="bg-warning" style="text-align: center; ">
+                                <tr>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá</th>
+                                    <th>Tổng</th>
+                                    <th>Action</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white " style="text-align: center; ">
+                                <input type="hidden" value="9" id="sl_kt">
+        
+                                        <tr>
+                                            <td><a href="index.php?action=chitiet&amp;id=1">Bánh ngọt</a></td>
+                                            <td><input type="number" id="sl" min="1" max="100" value="1" name="soluong[1]"></td>
+                                            <td>3000</td>
+                                            <td>3000</td>
+                                            <td ><button type="submit" name="capnhat" class="btn btn-outline-info">Cập nhật</button></td>
+                                            <td ><button type="submit" name="capnhat" class="btn btn-outline-danger">Xóa</button></td>
+                                            <!-- <td class="text-center"><a href=""><span class="text-danger">Xóa</span></a></td> -->
+                                        </tr>
+                                <tr>
+                                    <td colspan="5" class="text-right">Tổng cộng:</td>
+                                    <td colspan="1">35,000</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="text-right">
+                                        <a href="pay.html">
+                                            <input type="button" class="btn custom-btn " value="Thanh toán">
+                                        </a>
+                                    </td>
+                                </tr>
+        
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>    
+        
+       <!-- Cart End -->
+        
+
+        
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Địa chỉ</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>678 Phường 6, TP Cao Lãnh, Đồng Tháp</p>
+                                    <p><i class="fa fa-phone-alt"></i>012 345 67890</p>
+                                    <p><i class="fa fa-envelope"></i>dangngocbin2000@gmail.com</p>
+                                    <div class="footer-social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>Quick Links</h2>
+                                    <a href="">Terms of use</a>
+                                    <a href="">Privacy policy</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Help</a>
+                                    <a href="">FQAs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <h2>Hình ảnh</h2>
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="/clients/public/images/anh/menu-beverage-img.jpg" alt="Image" width="200px" height="170px">
+                                    <img src="/clients/public/images/anh/menu-beverage-img.jpg" alt="Image" width="200px" height="170px">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; <a href="#">Bin Cake</a> - Website Bánh Ngọt </p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="/clients/public/lib/easing/easing.min.js"></script>
+        <script src="/clients/public/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="/clients/public/lib/tempusdominus/js/moment.min.js"></script>
+        <script src="/clients/public/lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="/clients/public/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="/clients/public/mail/jqBootstrapValidation.min.js"></script>
+        <script src="/clients/public/mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="/clients/public/js/main.js"></script>
+    </body>
+</html>
+

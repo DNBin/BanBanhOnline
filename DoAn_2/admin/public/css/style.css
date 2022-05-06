@@ -1,0 +1,26 @@
+body{
+    background-color: #f2f7f8;
+}
+.li a{
+    color: brown;
+}
+.card li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+/* .card li:hover{
+    color:white !important;
+    text-decoration: none;
+    background-color: #448aff;
+    cursor: pointer;
+} */
+.container-fluid {
+    max-width: 1366px;
+    
+}
+.bg-admin{
+    background: url(../images/logo/bg.png) repeat-y #000 center; 
+}
+.ssub-menu{
+    min-height: 720px;
+}

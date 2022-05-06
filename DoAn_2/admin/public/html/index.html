@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="../images/logo.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="css/dataTables.bootstrap.min.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+  <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 pl-0 bg-white">
+            <nav class="bg-white sidebar sidebar-offcanvas" id="sidebar">
+              <div class="user-info text-center pt-3">
+                <img src="../images/images.jpg" alt="" width="70px" height="100px" style="border-radius:50px;">
+                <p class="pt-2">Đặng Ngọc Bin</p>
+                <p class="designation">Admin</p>
+                <span class="online"></span>
+              </div>
+              <ul class="nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span class="menu-title">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/widgets.html">
+                    <i class="fab fa-product-hunt text-success"></i>
+                    <span class="menu-title">Quản lý sản phẩm</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/forms/index.html">
+                    <i class="fas fa-users text-warning"></i>
+                    <span class="menu-title">Quản lý người dùng</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/ui-elements/buttons.html">
+                    <i class="fa fa-shopping-cart text-info"></i>
+                    <span class="menu-title">Thống kê đơn hàng</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/tables/index.html">
+                    <i class="fas fa-tags text-danger"></i>
+                    <span class="menu-title">Thống kê hàng tồn</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-cog text-dark"></i>
+                    <span class="menu-title">Settings</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-10 p-0">
+            <nav class="navbar navbar-expand-md bg-admin" >
+              <a class="navbar-brand text-white" href="index_admin.php"><i class='fas fa-home mr-1'></i>Home</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown mr-2">
+                    <a class="nav-link active" href="#" id="navbardrop" data-toggle="dropdown">
+                      <img src="../clients/public/images/image_user/1.jpg" alt="" class="rounded-circle" width="30px" height="30px">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="include/changepass.php">
+                            <i class="fas fa-cart-plus"> Thay đổi mật khẩu</i>
+                        </a>
+                        <a class="dropdown-item" href="?login=dangxuat">
+                            <i class="fas fa-sign-out-alt"> Đăng xuất</i>
+                        </a>
+                    </div>
+                </li>
+                </ul>
+              </div>
+            </nav>
+              <div class="content-wrapper p-4">
+                <h3 class="page-heading mb-4">Dashboard</h3>
+                <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card card-statistics">
+                      <div class="card-body">
+                        <div class="clearfix">
+                          <div class="float-left">
+                            <h3 class="text-warning">
+                              <i class="fab fa-product-hunt"></i>
+                            </h3>
+                          </div>
+                          <div class="float-right">
+                            <h4 class="bold-text">80</h4>
+                          </div>
+                        </div>
+                        <p class="text-muted text-center pt-3">Tổng sản phẩm</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card card-statistics">
+                      <div class="card-body">
+                        <div class="clearfix">
+                          <div class="float-left">
+                            <h3 class="text-danger">
+                              <i class="fa fa-shopping-cart highlight-icon" aria-hidden="true"></i>
+                            </h3>
+                          </div>
+                          <div class="float-right">
+ 
+                            <h4 class="bold-text">656</h4>
+                          </div>
+                        </div>
+                        <p class="text-muted text-center pt-3">Sản phẩm đã bán</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-2">
+                    <div class="card card-statistics">
+                      <div class="card-body">
+                        <div class="clearfix">
+                          <div class="float-left">
+                            <h3 class="text-success">
+                              <i class="fas fa-tags"></i>
+                            </h3>
+                          </div>
+                          <div class="float-right">
+
+                            <h4 class="bold-text">$65656</h4>
+                          </div>
+                        </div>
+                        <p class="text-muted pt-3 text-center">Sản phẩm tồn kho</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-4">
+                    <div class="card card-statistics">
+                      <div class="card-body">
+                        <div class="clearfix">
+                          <div class="float-left">
+                            <h3 class="text-primary">
+                              <i class="fas fa-comments-dollar"></i>
+                            </h3>
+                          </div>
+                          <div class="float-right">
+                            <h4 class="bold-text">+62,500</h4>
+                          </div>
+                        </div>
+                        <p class="text-muted text-center pt-3">Tổng doanh thu </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Đơn hàng</h5>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="mb-4">
+                              <p class="card-text text-muted mb-2">Đơn hàng vừa nhận</p>
+                              <div class="progress progress-slim">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                            <div class="mb-4">
+                              <p class="card-text text-muted mb-2">Đơn hàng đã giao</p>
+                              <div class="progress progress-slim">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                            <div class="mb-4">
+                              <p class="card-text text-muted mb-2">Các đơn đặt hàng đã trả lại</p>
+                              <div class="progress progress-slim">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                            <div class="mb-4">
+                              <p class="card-text text-muted mb-2">Đơn đặt hàng đã bị hủy </p>
+                              <div class="progress progress-slim">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                            <div class="mb-4">
+                              <p class="card-text text-muted mb-2">Cancelled orders</p>
+                              <div class="progress progress-slim">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <p class="text-muted mb-0">
+                              Note: Order details get updated every 10 minutes
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+    
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" style="padding: 37px 0px;">
+        <div class="col-12 text-center text-dark ">
+          <h5>Hân hạnh được phục vụ quý khách</h5>
+          <h5>Copyright © 2021 Bin Cake - Website Bánh Ngọt</h5>
+        </div>
+      </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
